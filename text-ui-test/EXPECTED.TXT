@@ -7,4 +7,4 @@ Hello from
 |_|  |_|\___/ \__'_| |_|  |_|\__'_|_| |_|
 
 What is your name?
-Hello James Gosling
+Hello Jianning
