@@ -1,9 +1,9 @@
 package seedu.duke;
 
-import seedu.duke.command.Command;
+import seedu.duke.logic.command.Command;
 import seedu.duke.data.Data;
 import seedu.duke.exception.ModManException;
-import seedu.duke.parser.Parser;
+import seedu.duke.logic.parser.Parser;
 import seedu.duke.ui.Ui;
 
 public class Modman {

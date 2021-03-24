@@ -1,12 +1,12 @@
-package seedu.duke.parser;
+package seedu.duke.logic.parser;
 
 import org.junit.jupiter.api.Test;
-import seedu.duke.command.AddAssignmentCommand;
-import seedu.duke.command.AddModuleCommand;
-import seedu.duke.command.Command;
-import seedu.duke.command.ExitCommand;
-import seedu.duke.command.ListModuleAssignmentsCommand;
-import seedu.duke.command.SetAssignmentDeadlineCommand;
+import seedu.duke.logic.command.AddAssignmentCommand;
+import seedu.duke.logic.command.AddModuleCommand;
+import seedu.duke.logic.command.Command;
+import seedu.duke.logic.command.ExitCommand;
+import seedu.duke.logic.command.ListModuleAssignmentsCommand;
+import seedu.duke.logic.command.SetAssignmentDeadlineCommand;
 import seedu.duke.exception.InvalidCommandException;
 import seedu.duke.exception.ModManException;
 

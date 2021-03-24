@@ -1,24 +1,23 @@
-package seedu.duke.parser;
+package seedu.duke.logic.parser;
 
-
-import seedu.duke.command.AddAssignmentCommand;
-import seedu.duke.command.AddModuleCommand;
-import seedu.duke.command.AddStudentCommand;
-import seedu.duke.command.AddTimetableCommand;
-import seedu.duke.command.Command;
-import seedu.duke.command.CurrentModuleCommand;
-import seedu.duke.command.ExitCommand;
-import seedu.duke.command.ListModuleAssignmentsCommand;
-import seedu.duke.command.ListModuleCommand;
-import seedu.duke.command.ListModuleStudentsCommand;
-import seedu.duke.command.ListModuleTimetableCommand;
-import seedu.duke.command.ListStudentGradesForAssignmentCommand;
-import seedu.duke.command.ListStudentsDetailsCommand;
-import seedu.duke.command.RemoveModuleCommand;
-import seedu.duke.command.SelectModuleCommand;
-import seedu.duke.command.SetAssignmentDeadlineCommand;
-import seedu.duke.command.SetAssignmentGradeCommand;
-import seedu.duke.command.SortAssignmentByDeadlineCommand;
+import seedu.duke.logic.command.AddAssignmentCommand;
+import seedu.duke.logic.command.AddModuleCommand;
+import seedu.duke.logic.command.AddStudentCommand;
+import seedu.duke.logic.command.AddTimetableCommand;
+import seedu.duke.logic.command.Command;
+import seedu.duke.logic.command.CurrentModuleCommand;
+import seedu.duke.logic.command.ExitCommand;
+import seedu.duke.logic.command.ListModuleAssignmentsCommand;
+import seedu.duke.logic.command.ListModuleCommand;
+import seedu.duke.logic.command.ListModuleStudentsCommand;
+import seedu.duke.logic.command.ListModuleTimetableCommand;
+import seedu.duke.logic.command.ListStudentGradesForAssignmentCommand;
+import seedu.duke.logic.command.ListStudentsDetailsCommand;
+import seedu.duke.logic.command.RemoveModuleCommand;
+import seedu.duke.logic.command.SelectModuleCommand;
+import seedu.duke.logic.command.SetAssignmentDeadlineCommand;
+import seedu.duke.logic.command.SetAssignmentGradeCommand;
+import seedu.duke.logic.command.SortAssignmentByDeadlineCommand;
 import seedu.duke.exception.InvalidCommandException;
 import seedu.duke.exception.ModManException;
 

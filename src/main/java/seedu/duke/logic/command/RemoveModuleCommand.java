@@ -1,8 +1,8 @@
-package seedu.duke.command;
+package seedu.duke.logic.command;
 
 import seedu.duke.data.Data;
 import seedu.duke.exception.ModuleNotFoundException;
-import seedu.duke.parser.Parser;
+import seedu.duke.logic.parser.Parser;
 import seedu.duke.ui.Ui;
 
 public class RemoveModuleCommand extends Command {

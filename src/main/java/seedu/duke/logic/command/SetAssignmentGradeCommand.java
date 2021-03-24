@@ -1,4 +1,4 @@
-package seedu.duke.command;
+package seedu.duke.logic.command;
 
 import seedu.duke.assignment.Assignment;
 import seedu.duke.Module;
