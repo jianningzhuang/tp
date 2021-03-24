@@ -20,11 +20,11 @@ The sections below give more details of each component.
 
 ## Parser and Command Component (Jianning)
 
-![ParserAndCommand](uml/ParserAndCommand.png)
+![logic](uml/LogicClass.png)
 
-1. `Parser` class is used to parse the user command.
+1. The `Parser` class is used to parse the user command.
 2. This returns a `Command` object which is executed in `Modman`.
-3. The command execution can affect the state of 
+3. The command execution can affect the state of other components e.g. the sort command changes the order of assignments in `Module`.
 4. The `Command` object can also instruct the `Ui` to list and display information to the user.
 
 Given below is the Sequence Diagram for creating the corresponding `Command` object from user input via `Parser`. </br>

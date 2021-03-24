@@ -2,7 +2,7 @@
 
 hide member
 
-
+package logic {
 package parser {
     Class Parser
 
@@ -18,7 +18,7 @@ XYZCommand -u-|> Command
 
 
 Parser ..> XYZCommand : creates >
-
+}
 
 
 @enduml
