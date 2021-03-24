@@ -18,7 +18,7 @@ The rest of the app consists of IDKHOWMANY components:
 
 The sections below give more details of each component.
 
-## Parser and Command Component
+## Parser and Command Component (Jianning)
 
 ![ParserAndCommand](uml/ParserAndCommand.png)
 
@@ -40,7 +40,14 @@ The sequence diagram also acts as a reference frame for `getCommand`.
 ## Implementation
 
 
-### Sorting Assignments by Deadline
+### Sorting Assignments by Deadline (Jianning)
+
+Given below is an example usage scenario and how the sorting mechanism behaves.
+
+Step 1. The user launches the application 
+
+### [Coming Soon] Autograding (Jianning)
+
 
 
 
