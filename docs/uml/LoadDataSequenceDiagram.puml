@@ -68,5 +68,6 @@ Data --> Storage
 deactivate Data
 
 [<-- Storage : Data
+deactivate Storage
 
 @enduml

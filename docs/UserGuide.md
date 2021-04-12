@@ -1,5 +1,7 @@
 # ModMan User Guide
 
+<hr style="border:2px solid orange; background-color: orange"> </hr>
+
 ## Introduction
 ````
  __  __           _   __  __ 
@@ -17,7 +19,7 @@ A command line interface (CLI) is a text-based user interface used to view and m
 
 These include operating system CLIs like the Command Prompt on Windows, which can be used to run and interact with the ModMan application.
 
-<hr style="border:2px solid black"> </hr>
+<hr style="border:2px solid orange; background-color: orange"> </hr>
 
 ## How to use the User Guide
 Welcome to the User Guide for ModMan!
@@ -28,6 +30,8 @@ Regardless if you are a teaching assistant, student or lecturer, this guide woul
 * Scroll down or click [here](#1-quick-start) for the Quick Start guide to get started now.
 * [FAQ](#3-faq) and [Command Summary](#4-command-summary) are available for quick queries or reference.
 
+<div style="page-break-after: always;"></div>
+
 ### Legend
 A short description of the icons that are used in this User Guide.
 
@@ -37,7 +41,7 @@ Icon | Purpose
 | :warning: | Warnings on usage of ModMan |
 | :bulb: | Tips for Teaching Assistants |
 
-<hr style="border:2px solid blackr"> </hr>
+<div style="page-break-after: always;"></div>
 
 ## Table of contents
 1. [Quick start](#1-quick-start) <br>
@@ -78,9 +82,8 @@ Icon | Purpose
    &nbsp;&nbsp;&nbsp;&nbsp; 2.5.2 [`bye` - Exiting ModMan](#252-exiting-modman--bye) <br>
 1. [FAQ](#3-faq)
 1. [Command summary](#4-command-summary)
-***
 
-<hr style="border:2px solid black"> </hr>
+<div style="page-break-after: always;"></div>
 
 ## 1. Quick Start
 
@@ -89,7 +92,7 @@ Icon | Purpose
 1. Open a command window in the folder containing the `.jar` file.
 1. Run the command `java -jar {filename}.jar` <br> If you haven't changed the filename, run the command `java -jar ModMan.jar`
 
-<hr style="border:1px solid black"> </hr>
+<hr style="border:1px solid darkorange; background-color: darkorange"> </hr>
 
 ### 1.1 Input Formatting
 This section covers points to note about proper input formats for commands.
@@ -107,8 +110,7 @@ This section covers points to note about proper input formats for commands.
 | :warning: | Inputs that do not follow this format would be invalid. |
 |----------------------|-------------------------------------|
 
-<hr style="border:1px solid black"> </hr>
-
+<hr style="border:1px solid darkorange; background-color: darkorange"> </hr>
 
 ### 1.2 Database File Tampering
 
@@ -122,18 +124,17 @@ If you delete the whole `Database.txt`, a new `Database.txt` would be created fo
 Although not recommended, edits may be made in `Database.txt` that effects changes in ModMan while still loading those changes in when starting up.
 * For example, changing student name of `Student` to another name that does not match any other `Student`.
 
-<hr style="border:2px solid black"> </hr>
+<div style="page-break-after: always;"></div>
 
 ## 2. Features 
 
 | :information_source: | Inputs in `UPPER_CASE` are parameters to be supplied by the user. |
 |----------------------|-------------------------------------|
 
-<hr style="border:1px solid black"> </hr>
 
 ### 2.1 Module
 
-<hr style="border:1px solid black"> </hr>
+<hr style="border:1px solid darkorange; background-color: darkorange"> </hr>
 
 ### 2.1.1 Adding a Module: `add module`
 
@@ -157,7 +158,7 @@ Expected output:
 | :warning: | Input is case sensitive, ie. `CS2113T` and `cs2113T` would be considered two different modules |
 |----------------------|-------------------------------------|
 
-***
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
 ### 2.1.2 Removing a Module: `remove module`
 
@@ -180,7 +181,8 @@ Expected output:
 | :warning: | You can remove the current `Module` you are working in |
 |----------------------|-------------------------------------|
 
-***
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
+
 ### 2.1.3 Selecting a Module: `select`
 
 Select the module you want to currently work in.
@@ -202,7 +204,9 @@ Expected output:
 
 | :information_source: | All commands onwards assumes we are working in the module CS2113T |
 |----------------------|-------------------------------------|
-***
+
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
+
 ### 2.1.4 Viewing Current Module: `current`
 
 View the current module you are working in. Also obtain an overview of the module, namely the lessons, assignments, as well as number of students.
@@ -223,7 +227,9 @@ Expected output:
 	    - You have not added any assignments to yet.
 -------------------------------------------------------------------------- 
 ````
-***
+
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
+
 ### 2.1.5 Listing Modules: `list module`
 
 Lists all the modules you have added, and specifies the current module (if any).
@@ -238,11 +244,12 @@ Expected output:
 	1. CS2113T (current)
 -------------------------------------------------------------------------- 
 ````
-<hr style="border:1px solid black"> </hr>
+
+<div style="page-break-after: always;"></div>
 
 ### 2.2 Student 
 
-<hr style="border:1px solid black"> </hr>
+<hr style="border:1px solid darkorange; background-color: darkorange"> </hr>
 
 ### 2.2.1 Adding a student: `add student`
 
@@ -264,7 +271,8 @@ Expected output:
     Bryan Wong, A0123456Y, e0123456@u.nus.edu
 ---------------------------------------------------------------------
 ```
-***
+
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
 ### 2.2.2 Listing Students Details: `list student details`
 
@@ -280,7 +288,8 @@ Expected output:
     1. Bryan Wong, A0123456Y, e0123456@u.nus.edu
 -------------------------------------------------------------------------- 
 ````
-***
+
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
 ### 2.2.3 Listing Students in Module: `list student`
 
@@ -296,11 +305,12 @@ Expected output:
     1. Bryan
 ---------------------------------------------------------------------
 ```
-<hr style="border:1px solid black"> </hr>
+
+<div style="page-break-after: always;"></div>
 
 ### 2.3 Timetable
 
-<hr style="border:1px solid black"> </hr>
+<hr style="border:1px solid darkorange; background-color: darkorange"> </hr>
 
 ### 2.3.1 Adding a Lesson: `add timetable`
 
@@ -333,7 +343,9 @@ Expected output:
 
 In the above example, the user has added a CS2113T Lecture that will occur on Friday from 4pm to 6pm over Zoom. Notice that
 you have to be careful in specifying the `Day` and 24-hr timing format.
-***
+
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
+
 ### 2.3.2 Removing Timetable Lessons: `delete timetable`
 
 Deletes the lesson in the timetable corresponding to the index, for the current module you have selected.
@@ -350,7 +362,9 @@ Expected output:
     You have successfully removed lesson: FRIDAY, 16:00-18:00 from CS2113T
 ---------------------------------------------------------------------
 ```
-***
+
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
+
 ### 2.3.3 Editing Timetable Lessons: `edit timetable`
 
 Edits the lesson in the timetable corresponding to the index, for the current module you have selected.
@@ -382,7 +396,8 @@ Expected output:
 
 In the example we have used till now, we had added a CS2113T Lecture that will occur on Friday from 4pm to 6pm over Zoom. 
 The above command can be used to change the day from `FRIDAY` to `MONDAY`.
-***
+
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
 ### 2.3.4 Listing Timetable Lessons: `list timetable`
 
@@ -399,11 +414,12 @@ Expected output:
     1. Lecture: FRIDAY, 16:00-18:00 (Zoom)
 ---------------------------------------------------------------------
 ```
-<hr style="border:1px solid black"> </hr>
+
+<div style="page-break-after: always;"></div>
 
 ### 2.4 Assignment
 
-<hr style="border:1px solid black"> </hr>
+<hr style="border:1px solid darkorange; background-color: darkorange"> </hr>
 
 ### 2.4.1 Adding an Assignment: `add assignment`
 
@@ -425,7 +441,8 @@ Expected output:
     Magic Sequence
 ---------------------------------------------------------------------
 ```
-***
+
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
 ### 2.4.2 Setting Assignment Deadline : `set assignment deadline`
 
@@ -434,7 +451,7 @@ If a deadline had been set previously, the deadline of the assignment will be up
 
 Format: `set assignment deadline /a ASSIGNMENT_NAME /d DEADLINE`
 
-| :warning: | The deadline must be in the format `dd MM yyyy` e.g. 16 08 2021 </br> You are also restricted to dates from the years 2021 to 2030 |
+| :warning: | The deadline must be in the format `dd MM yyyy` e.g. 16 08 2021. <br> You are also restricted to dates between year 2021 and 2030 </br> |
 |----------------------|-------------------------------------|
 
 
@@ -461,7 +478,8 @@ Examples of usage:</br>
 
 | :bulb: | You can set your own deadlines to be earlier than the actual deadline for grading to help plan your time more wisely!|
 |----------------------|-------------------------------------|
-***
+
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
 ### 2.4.3 Setting Assignment Grade : `set assignment grade`
 
@@ -470,7 +488,7 @@ If a grade had been set previously, the grade for the student will be updated.
 
 Format: `set assignment grade /a ASSIGNMENT_NAME /s STUDENT_NAME /g GRADE`
 
-| :warning: | The grade must be a percentage in the range from 0 to 100</br> It can also be a floating point number|
+| :warning: | The grade must be a percentage within the range 0 to 100. <br> It can also be a decimal number.</br>|
 |----------------------|-------------------------------------|
 
 
@@ -483,7 +501,7 @@ Examples of usage:</br>
     I have set Jianning's grade to 100 for assignment quiz1 in CS2113T
 ---------------------------------------------------------------------
 ```
-2. `set assignment grade /a quiz1 /s Jianning /g 101`
+2. `set assignment grade /a quiz1 /s Jianning /g 101
 
 ```
 ---------------------------------------------------------------------
@@ -493,17 +511,18 @@ Examples of usage:</br>
 
 | :bulb: | You can manually set the grades of your students if you prefer a more personal touch compared to autograding|
 |----------------------|-------------------------------------|
-***
 
-### 2.4.4 Setting Assignment Percentage: `set assignment percentage`
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
-Sets the assignment weightage of an existing assignment. The percentage can be entered as either a 2-decimal number, 1-decimal number or an integer.
+### 2.4.4 Setting Assignment Percentage: `set assignment percentage` 
 
-Format: `set assignment percentage /a ASSIGNMENT_NAME /p PERCENTAGE`
+Sets the assignment weightage of an existing assignment. The percentage can be entered as either a 2-decimal number, 1-decimal number or an integer. 
+
+Format: `set assignment percentage /a ASSIGNMENT_NAME /p PERCENTAGE` 
 
 Examples of usage:
-* `set assignment percentage /a Magic Sequence /p 15`
-* `set assignment percentage /a Forest Fruits /p 25.0`
+* `set assignment percentage /a Magic Sequence /p 15` 
+* `set assignment percentage /a Forest Fruits /p 25.0` 
 
 Expected output:
 
@@ -513,20 +532,20 @@ Expected output:
 ---------------------------------------------------------------------
 ```
 
-***
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
-### 2.4.5 Setting Assignment Comments: `set assignment comments`
-
-Sets a comment for an existing assignment. The assignment comment cannot exceed 100 words. This feature will eventually support comments of unlimited length (we are still working on this feature!).
-
-| :bulb: |The editing an assignment's comment feature is still in production. However, you can recreate an edit by calling the [`get assignment comments`](#246-getting-assignment-comments-get-assignment-comments) command, copy-pasting the result onto your terminal and editing before setting assignment comments again|
-|----------------------|-------------------------------------|
-
-Format: `set assignment comments /a ASSIGNMENT_NAME /c COMMENTS`
+### 2.4.5 Setting Assignment Comments: `set assignment comments` 
+ 
+Sets a comment for an existing assignment. The assignment comment cannot exceed 100 characters. ModMan will eventually support comments of unlimited length (we are still working on this feature!). 
+ 
+| :bulb: |The editing an assignment's comment feature is still in production. However, you can recreate an edit by calling the [`get assignment comments`](#246-getting-assignment-comments-get-assignment-comments) command, copy-pasting the result onto your terminal and editing before setting assignment comments again| 
+|----------------------|-------------------------------------| 
+ 
+Format: `set assignment comments /a ASSIGNMENT_NAME /c COMMENTS` 
 
 Examples of usage:
-* `set assignment comments /a Magic Sequence /p This assignment is well done.`
-* `set assignment comments /a Forest Fruits /p Most people did not solve this assignment in full.`
+* `set assignment comments /a Magic Sequence /c This assignment is well done.`
+* `set assignment comments /a Forest Fruits /c Most people did not solve this assignment in full.`
 
 Expected output:
 
@@ -537,7 +556,7 @@ Expected output:
 ---------------------------------------------------------------------
 ```
 
-***
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
 ### 2.4.6 Getting Assignment Comments: `get assignment comments`
 
@@ -558,7 +577,7 @@ Expected output:
 ---------------------------------------------------------------------
 ```
 
-***
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
 ### 2.4.7 Editing an Assignment Name: `edit assignment name`
 
@@ -579,7 +598,7 @@ Expected output:
 ---------------------------------------------------------------------
 ```
 
-***
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
 ### 2.4.8 Listing Module Assignments : `list assignments` 
 
@@ -607,7 +626,9 @@ Expected output:
 
 | :information_source: | Assignments with no deadline set will output `due date not specified` |
 |----------------------|-------------------------------------|
-***
+
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
+
 ### 2.4.9 Sorting Module Assignments : `sort assignments by deadline` 
 
 The `sort assignment by deadline` command sorts and lists the assignments in your current module by deadline, allowing you to easily keep track of which assignments have to be graded soon. 
@@ -643,7 +664,8 @@ After sorting:
     3. quiz1 (McqAssignment) - due date not specified.
 ---------------------------------------------------------------------
 ```
-***
+
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
 ### 2.4.10 Listing Assignment Grades : `list assignment grades` 
 
@@ -663,7 +685,9 @@ Expected output:
     2. A0215114X - 101.0
 ---------------------------------------------------------------------
 ```
-***
+
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
+
 ### 2.4.11 Viewing Assignment Answer : `view assignment answer`
 
 The `view assignment answer` command allows you to easily search and retrieve the answer key for an assignment just by entering the name of the assignment. </br>
@@ -722,7 +746,8 @@ Expected output:
 ```
 | :bulb: | You can open up the student script in another terminal so that you can view both the answer key and student script side by side! |
 |----------------------|-------------------------------------|
-***
+
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
 ### 2.4.12 Viewing Student Script : `view student script`
 
@@ -778,8 +803,8 @@ Expected output:
 ```
 | :bulb: | You can open up the answer key in another terminal so that you can view both the answer key and student script side by side!|
 |----------------------|-------------------------------------|
-***
 
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
 ### 2.4.13 Autograding Assignments : `autograde assignment`
 
@@ -832,12 +857,11 @@ Expected output:
 | :information_source: | Answers for MCQ assignments are limited to the options A to E or 1 to 5</br>Answers fpr Short Answer Assignments are limited to 100 characters.|
 |----------------------|-------------------------------------|
 
-<hr style="border:1px solid black"> </hr>
-
+<div style="page-break-after: always;"></div>
 
 ### 2.5 Help and Exit
 
-<hr style="border:1px solid black"> </hr>
+<hr style="border:1px solid darkorange; background-color: darkorange"> </hr>
 
 ### 2.5.1 Listing Basic Commands: `help`
 
@@ -870,7 +894,7 @@ Expected output:
 Please note that it does not display the full list of commands (due to there being so many!).
 You may open this User Guide for a comprehensive list.
 
-***
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
 ### 2.5.2 Exiting ModMan : `bye`
 
@@ -884,7 +908,8 @@ Expected output:
     Bye. Hope to see you again soon!
 ---------------------------------------------------------------------
 ```
-<hr style="border:2px solid black"> </hr>
+
+<hr style="border:2px solid orange; background-color: orange"> </hr>
 
 ## 3. FAQ
 
@@ -900,7 +925,7 @@ Expected output:
 
 **A**: You can simply copy and paste the answer key and student scripts into the respective folders in the working directory of ModMan named `answers` and `scripts` respectively.
 
-<hr style="border:2px solid black"> </hr>
+<hr style="border:2px solid orange; background-color: orange"> </hr>
 
 ## 4. Command Summary
 <br>

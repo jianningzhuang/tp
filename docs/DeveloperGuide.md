@@ -33,6 +33,8 @@ information.
 * Alternatively, if you wish to dive right into ModMan's implementation, 
   we would recommend starting in the [Design](#design) section.
 
+<div style="page-break-after: always;"></div>
+
 ## Table of contents
 * [Setting Up](#setting-up)
 * [Design](#design)
@@ -54,7 +56,9 @@ information.
     * [Non-functional requirements](#non-functional-requirements)
 * [Glossary](#glossary)
 * [Instructions for manual testing](#instructions-for-manual-testing)
-    
+
+<div style="page-break-after: always;"></div>
+
 ## Setting Up
 
 You may follow this Setting Up guide and get started as a developer! This guide helps you import ModMan onto IntelliJ IDEA,
@@ -68,6 +72,8 @@ but feel free to use your preferred IDE.
 1. To ensure everything is working correctly, you may right click the `ModMan.java` file and select `Run Modman.main()`. You can also test some of ModMan's commands.
 
 For readers who are not familiar with the commands of ModMan, they can access the User Guide [here](https://ay2021s2-cs2113t-f08-1.github.io/tp/UserGuide.html).
+
+<div style="page-break-after: always;"></div>
 
 ## Design
 
@@ -183,6 +189,8 @@ The figure below shows the classes in ModMan that tracks module information data
 The `Data`,
 1. Stores `Module` objects that represents the modules.
 2. Each `Module` contains the details of `Lesson` and `Student` objects which implements the `Storable` interface, as well as abstract `Assignment` objects which implement the `Storable` and `Comparable` interfaces.
+
+<div style="page-break-after: always;"></div>
 
 ## Implementation
 
@@ -339,6 +347,7 @@ Given below is the sequence diagram for the `AddTimetableCommand`:
 | :information_source: |  - `startTime` and `endTime` passed into the `Lesson` constructor is of type `LocalTime`<br> - `day` is of enumeration type `Day`|
 |----------------------|-------------------------------------|
 
+<div style="page-break-after: always;"></div>
 
 ## Product scope
 
@@ -383,6 +392,7 @@ With the help of ModMan, users will be able to add, edit, and store all informat
 1. Users who have above average typing speeds (in English) should be able to easily issue commands faster than using a mouse.
 1. The application should not depend on any remote servers. This means it can be accessed anywhere, without the need for an Internet connection. 
 
+<div style="page-break-after: always;"></div>
 
 ## Glossary
 

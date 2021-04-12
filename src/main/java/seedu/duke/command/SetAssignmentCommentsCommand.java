@@ -9,6 +9,7 @@ import seedu.duke.exception.ModManException;
 import seedu.duke.exception.ModuleNotFoundException;
 import seedu.duke.exception.ModuleNotSelectedException;
 import seedu.duke.exception.EmptyParameterException;
+import seedu.duke.exception.CommentsTooLongException;
 import seedu.duke.ui.Ui;
 
 public class SetAssignmentCommentsCommand extends Command {
@@ -26,7 +27,7 @@ public class SetAssignmentCommentsCommand extends Command {
      * @throws EmptyParameterException insufficient parameters
      */
     public SetAssignmentCommentsCommand(String moduleCode, String assignmentName, String comments)
-            throws ModuleNotSelectedException, EmptyParameterException {
+            throws ModuleNotSelectedException, EmptyParameterException, CommentsTooLongException {
         if (moduleCode == null) {
             throw new ModuleNotSelectedException();
         }
@@ -35,6 +36,9 @@ public class SetAssignmentCommentsCommand extends Command {
         this.comments = comments.trim();
         if (comments.length() == 0) {
             throw new EmptyParameterException();
+        }
+        if (comments.length() > 100) {
+            throw new CommentsTooLongException();
         }
     }
 

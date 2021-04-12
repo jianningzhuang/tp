@@ -33,6 +33,7 @@ Given below are a summary of my contributions to the project
 
 - **Code contributed**: [*RepoSense* Link](https://nus-cs2113-ay2021s2.github.io/tp-dashboard/?search=vvvvh123)
 
+<div style="page-break-after: always;"></div>
 
 - **Project management**:
     - Managed releases v1.0 - v2.1 (3 releases) on GitHub

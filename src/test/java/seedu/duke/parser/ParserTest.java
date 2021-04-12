@@ -42,7 +42,7 @@ class ParserTest {
 
     @Test
     void testParse_addAssignmentValid_AddAssignmentCommand() throws ModManException {
-        String inputString = "add assignment /a quiz1";
+        String inputString = "add assignment /t la /a quiz1";
         Command c = Parser.parse(inputString);
         assertTrue(c instanceof AddAssignmentCommand);
     }

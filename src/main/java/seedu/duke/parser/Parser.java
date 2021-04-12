@@ -40,6 +40,8 @@ import seedu.duke.exception.ModManException;
 import seedu.duke.exception.ModuleNotSelectedException;
 import seedu.duke.exception.TimeFormatException;
 import seedu.duke.exception.SameNameEditException;
+import seedu.duke.exception.IllegalCharacterException;
+import seedu.duke.exception.CommentsTooLongException;
 
 import java.time.format.DateTimeParseException;
 import java.util.logging.Level;
@@ -78,6 +80,12 @@ public class Parser {
         logger.log(Level.FINE, "parsing user command");
         Command command;
         line = line.trim() + " ";
+        for (int i = 0; i < line.length(); i++) {
+            char character = line.charAt(i);
+            if (character == '|') {
+                throw new IllegalCharacterException();
+            }
+        }
         if (line.equals("bye ")) {
             logger.log(Level.INFO, "bye command entered");
             command = new ExitCommand();
@@ -169,6 +177,9 @@ public class Parser {
             String studentSeparator = "/s";
             int assignmentIndex = line.indexOf(assignmentSeparator);
             int studentIndex = line.indexOf(studentSeparator);
+            if (assignmentIndex == -1 || studentIndex == -1) {
+                throw new InsufficientParametersException();
+            }
             String assignmentName = line.substring(assignmentIndex + A_LENGTH, studentIndex - 1);
             String studentName = line.substring(studentIndex + S_LENGTH).trim();
             command = new ViewScriptCommand(currentModule, assignmentName, studentName);
@@ -194,6 +205,9 @@ public class Parser {
             logger.log(Level.INFO, "autograde assignment command entered");
             String assignmentSeparator = "/a";
             int assignmentIndex = line.indexOf(assignmentSeparator);
+            if (assignmentIndex == -1) {
+                throw new InsufficientParametersException();
+            }
             String assignmentName = line.substring(assignmentIndex + A_LENGTH).trim();
             command = new AutogradeAssignmentCommand(currentModule, assignmentName);
         } catch (StringIndexOutOfBoundsException e) {
@@ -217,6 +231,9 @@ public class Parser {
             logger.log(Level.INFO, "view assignment answers command entered");
             String assignmentSeparator = "/a";
             int assignmentIndex = line.indexOf(assignmentSeparator);
+            if (assignmentIndex == -1) {
+                throw new InsufficientParametersException();
+            }
             String assignmentName = line.substring(assignmentIndex + A_LENGTH).trim();
             command = new ViewAnswersCommand(currentModule, assignmentName);
         } catch (StringIndexOutOfBoundsException e) {
@@ -317,6 +334,9 @@ public class Parser {
             String newNameSeparator = "/n";
             int oldNameIndex = line.indexOf(oldNameSeparator);
             int newNameIndex = line.indexOf(newNameSeparator);
+            if (oldNameIndex == -1 || newNameIndex == -1) {
+                throw new InsufficientParametersException();
+            }
             String oldName = line.substring(oldNameIndex + A_LENGTH, newNameIndex - 1);
             String newName = line.substring(newNameIndex + A_LENGTH).trim();
             command = new EditAssignmentNameCommand(currentModule, oldName, newName);
@@ -353,6 +373,9 @@ public class Parser {
             String deadlineSeparator = "/d";
             int assignmentIndex = line.indexOf(assignmentSeparator);
             int deadlineIndex = line.indexOf(deadlineSeparator);
+            if (assignmentIndex == -1 || deadlineIndex == -1) {
+                throw new InsufficientParametersException();
+            }
             String assignmentName = line.substring(assignmentIndex + A_LENGTH, deadlineIndex - 1);
             String deadline = line.substring(deadlineIndex + D_LENGTH).trim();
             command = new SetAssignmentDeadlineCommand(currentModule, assignmentName, deadline);
@@ -367,7 +390,8 @@ public class Parser {
     }
 
     private static Command getSetAssignmentCommentsCommand(String line)
-            throws InsufficientParametersException, ModuleNotSelectedException, EmptyParameterException {
+            throws InsufficientParametersException, ModuleNotSelectedException,
+            EmptyParameterException, CommentsTooLongException {
         Command command;
         try {
             logger.log(Level.INFO, "set comments command entered");
@@ -375,6 +399,9 @@ public class Parser {
             String commentSeparator = "/c";
             int assignmentIndex = line.indexOf(assignmentSeparator);
             int commentsIndex = line.indexOf(commentSeparator);
+            if (assignmentIndex == -1 || commentsIndex == -1) {
+                throw new InsufficientParametersException();
+            }
             String assignmentName = line.substring(assignmentIndex + A_LENGTH, commentsIndex - 1);
             String comments = line.substring(commentsIndex + C_LENGTH).trim();
             command = new SetAssignmentCommentsCommand(currentModule, assignmentName, comments);
@@ -400,6 +427,9 @@ public class Parser {
             logger.log(Level.INFO, "set comments command entered");
             String assignmentSeparator = "/a";
             int assignmentIndex = line.indexOf(assignmentSeparator);
+            if (assignmentIndex == -1) {
+                throw new InsufficientParametersException();
+            }
             String assignmentName = line.substring(assignmentIndex + A_LENGTH);
             command = new GetAssignmentCommentsCommand(currentModule, assignmentName);
         } catch (StringIndexOutOfBoundsException e) {
@@ -420,6 +450,9 @@ public class Parser {
             int assignmentIndex = line.indexOf(assignmentSeparator);
             int studentIndex = line.indexOf(studentSeparator);
             int gradeIndex = line.indexOf(gradeSeparator);
+            if (assignmentIndex == -1 || studentIndex == -1 || gradeIndex == -1) {
+                throw new InsufficientParametersException();
+            }
             String assignmentName = line.substring(assignmentIndex + A_LENGTH, studentIndex - 1);
             String studentName = line.substring(studentIndex + S_LENGTH, gradeIndex - 1);
             String grade = line.substring(gradeIndex + G_LENGTH).trim();
@@ -432,7 +465,7 @@ public class Parser {
     }
 
     private static Command getSetAssignmentPercentageCommand(String line) throws InvalidCommandException,
-            InvalidPercentageException, ModuleNotSelectedException {
+            InvalidPercentageException, ModuleNotSelectedException, InsufficientParametersException {
         Command command;
         try {
             logger.log(Level.INFO, "setAssignmentPercentage command entered");
@@ -440,6 +473,9 @@ public class Parser {
             String percentageSeparator = "/p";
             int assignmentIndex = line.indexOf(assignmentSeparator);
             int percentageIndex = line.indexOf(percentageSeparator);
+            if (assignmentIndex == -1 || percentageIndex == -1) {
+                throw new InsufficientParametersException();
+            }
             String assignmentName = line.substring(assignmentIndex + A_LENGTH, percentageIndex - 1);
             String percentage = line.substring(percentageIndex + D_LENGTH).trim();
             command = new SetAssignmentPercentageCommand(currentModule, assignmentName, percentage);
@@ -474,6 +510,9 @@ public class Parser {
             int dayIndex = line.indexOf(daySeparator);
             int startIndex = line.indexOf(startSeparator);
             int endIndex = line.indexOf(endSeparator);
+            if (typeIndex == -1 || venueIndex == -1 || dayIndex == -1 || startIndex == -1 || endIndex == -1) {
+                throw new InsufficientParametersException();
+            }
             String type = line.substring(typeIndex + T_LENGTH, venueIndex - 1);
             String venue = line.substring(venueIndex + V_LENGTH, dayIndex - 1);
             String day = line.substring(dayIndex + D_LENGTH, startIndex - 1);
@@ -534,6 +573,9 @@ public class Parser {
             int dayIndex = line.indexOf(daySeparator);
             int startIndex = line.indexOf(startSeparator);
             int endIndex = line.indexOf(endSeparator);
+            if (typeIndex == -1 || venueIndex == -1 || dayIndex == -1 || startIndex == -1 || endIndex == -1) {
+                throw new InsufficientParametersException();
+            }
             String lessonIndex = line.substring(EDIT_TIMETABLE_LENGTH, typeIndex - 1);
             String type = line.substring(typeIndex + T_LENGTH, venueIndex - 1);
             String venue = line.substring(venueIndex + V_LENGTH, dayIndex - 1);
@@ -593,6 +635,9 @@ public class Parser {
             int nameIndex = line.indexOf(nameSeparator);
             int numberIndex = line.indexOf(numberSeparator);
             int emailIndex = line.indexOf(emailSeparator);
+            if (nameIndex == -1 || numberIndex == -1 || emailIndex == -1) {
+                throw new InsufficientParametersException();
+            }
             String studentName = line.substring(nameIndex + S_LENGTH, numberIndex - 1);
             String studentNumber = line.substring(numberIndex + HASH_LENGTH, emailIndex - 1);
             String email = (line + " ").substring(emailIndex + E_LENGTH).trim();
@@ -634,6 +679,9 @@ public class Parser {
             String assignmentSeparator = "/a";
             int assignmentTypeIndex = line.indexOf(assignmentTypeSeparator);
             int assignmentIndex = line.indexOf(assignmentSeparator);
+            if (assignmentIndex == -1 || assignmentTypeIndex == -1) {
+                throw new InsufficientParametersException();
+            }
             String assignmentType = line.substring(assignmentTypeIndex + T_LENGTH, assignmentIndex - 1).trim();
             String assignmentName = line.substring(assignmentIndex + A_LENGTH).trim();
             command = new AddAssignmentCommand(assignmentType, currentModule, assignmentName);
@@ -659,6 +707,9 @@ public class Parser {
             logger.log(Level.INFO, "list student assignment grades command entered");
             String assignmentSeparator = "/a";
             int assignmentIndex = line.indexOf(assignmentSeparator);
+            if (assignmentIndex == -1) {
+                throw new InsufficientParametersException();
+            }
             String assignmentName = line.substring(assignmentIndex + A_LENGTH).trim();
             command = new ListStudentGradesForAssignmentCommand(currentModule, assignmentName);
         } catch (StringIndexOutOfBoundsException e) {
