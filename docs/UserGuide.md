@@ -913,6 +913,13 @@ Expected output:
 
 ## 3. FAQ
 
+**Q**: How do I transfer my data onto another computer?
+
+**A**: Navigate to where the ModMan jar file is located and identify the Database folder. 
+Simply copy this Database folder and transfer it via thumb drive, email or any other means to your other computer. 
+After running ModMan on your other computer, you can replace the generated Database folder with the one on your previous computer. 
+You're now good to go to start accessing your data on your new computer!
+
 **Q**: How do I delete a particular student/assignment? 
 
 **A**: The feature of deletion is still in progress and will be released in our upcoming versions. 
@@ -924,6 +931,8 @@ Expected output:
 **Q**: How do I add the answer key and students' scripts for grading?
 
 **A**: You can simply copy and paste the answer key and student scripts into the respective folders in the working directory of ModMan named `answers` and `scripts` respectively.
+Please also check that you have named the files in the correct format. 
+Refer to section 2.4.11 and 2.4.12 for more details on the format of the answer key and student script text files.
 
 <hr style="border:2px solid orange; background-color: orange"> </hr>
 
