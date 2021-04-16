@@ -27,8 +27,10 @@ Welcome to the User Guide for ModMan!
 Regardless if you are a teaching assistant, student or lecturer, this guide would be helpful for you in picking up and using ModMan.
 
 * You may navigate to any subsection from the [Table of contents](#table-of-contents).
-* Scroll down or click [here](#1-quick-start) for the Quick Start guide to get started now.
-* [FAQ](#3-faq) and [Command Summary](#4-command-summary) are available for quick queries or reference.
+* Scroll down or click [here](#quick-start) for the Quick Start guide to get started now.
+* [FAQ](#faq) and [Command Summary](#command-summary) are available for quick queries or reference.
+
+<div style="page-break-after: always;"></div>
 
 <div style="page-break-after: always;"></div>
 
@@ -44,6 +46,7 @@ Icon | Purpose
 <div style="page-break-after: always;"></div>
 
 ## Table of contents
+<<<<<<< HEAD
 1. [Quick start](#1-quick-start) <br>
     1.1 [Input Formatting](#11-input-formatting)<br>
     1.2 [Database File Tampering](#12-database-file-tampering)<br>
@@ -82,13 +85,59 @@ Icon | Purpose
    &nbsp;&nbsp;&nbsp;&nbsp; 2.5.2 [`bye` - Exiting ModMan](#252-exiting-modman--bye) <br>
 1. [FAQ](#3-faq)
 1. [Command summary](#4-command-summary)
+=======
+1. [Quick start](#quick-start) <br>
+    1.1 [Input Formatting](#input-formatting)<br>
+    1.2 [Database File Tampering](#database-file-tampering)<br>
+   
+
+2. [Features](#features) <br>
+   2.1 [Module](#module) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.1.1 [`add module` - Adding a Module](#addmodule) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.1.2 [`remove module` - Removing a Module](#removing-a-module) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.1.3 [`select` - Selecting a Module](#selecting-a-module-select) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.1.4 [`current` - Viewing Current Module](#viewing-current-module-current) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.1.5 [`list module` - Listing Modules](#listing-modules-list-module) <br>
+   2.2 [Student](#student) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.2.1 [`add student` - Adding a Student](#adding-a-student-add-student) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.2.2 [`list student details` - Listing Students Details](#listing-students-details-list-student-details) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.2.3 [`list student` - Listing Students in Module](#listing-students-in-module-list-student) <br>
+   2.3 [Timetable](#timetable) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.3.1 [`add timetable` - Adding a Lesson](#adding-a-lesson-add-timetable) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.3.2 [`delete timetable` - Removing Timetable Lessons](#removing-timetable-lessons-delete-timetable) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.3.3 [`edit timetable` - Editing a Timetable Lesson](#editing-timetable-lessons-edit-timetable) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.3.4 [`list timetable` - Listing Timetable Lessons](#listing-timetable-lessons-list-timetable) <br>
+   2.4 [Assignment](#assignment) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.4.1 [`add assignment` - Adding an Assignment](#adding-an-assignment-add-assignment) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.4.2 [`set assignment deadline` - Setting Assignment Deadline](#setting-assignment-deadline--set-assignment-deadline) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.4.3 [`set assignment grade` - Setting Assignment Grade](#setting-assignment-grade--set-assignment-grade) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.4.4 [`set assignment percentage` - Setting Assignment Percentage of Overall Grade](#setting-assignment-percentage-set-assignment-percentage) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.4.5 [`set assignment comments` - Setting Assignment Comments](#setting-assignment-comments-set-assignment-comments) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.4.6 [`get assignment comments` - Getting Assignment Percentage](#getting-assignment-comments-get-assignment-comments) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.4.7 [`edit assignment name` - Editing an Assignment Name](#editing-an-assignment-name-edit-assignment-name) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.4.8 [`list assignments` - Listing Module Assignments](#listing-module-assignments--list-assignments) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.4.9 [`sort assignments by deadline` - Sorting Module Assignments](#sorting-module-assignments--sort-assignments-by-deadline) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.4.10 [`list assignment grades` - Listing Assignment Grades](#listing-assignment-grades--list-assignment-grades) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.4.11 [`view assignment answer` - Viewing Assignment Answers](#viewing-assignment-answer--view-assignment-answer) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.4.12 [`view student script` - Viewing Student Script](#viewing-student-script--view-student-script) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.4.13 [`autograde assignment` - Auto-Grading Assignments](#autograding-assignments--autograde-assignment) <br>
+   2.5 [Help and Exit](#help-and-exit) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.5.1 [`help` - Listing Basic Commands](#listing-basic-commands-help) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 2.5.2 [`bye` - Exiting ModMan](#exiting-modman--bye) <br>
+   
+
+3. [FAQ](#faq)
+   
+
+4. [Command summary](#command-summary)
+>>>>>>> 64e43588ad2527a9a9711bf23ddaeb07a9b5844b
 
 <div style="page-break-after: always;"></div>
 
 ## 1. Quick Start
 
 1. Ensure you have Java 11 installed on your computer or install it from [here](https://www.oracle.com/sg/java/technologies/javase-jdk11-downloads.html).
-1. Download the latest `ModMan.jar` release from [here](https://github.com/AY2021S2-CS2113T-F08-1/tp/releases/tag/v2.0).
+1. Download the latest `ModMan.jar` release from [here](https://github.com/AY2021S2-CS2113T-F08-1/tp/releases/tag/v2.1).
 1. Open a command window in the folder containing the `.jar` file.
 1. Run the command `java -jar {filename}.jar` <br> If you haven't changed the filename, run the command `java -jar ModMan.jar`
 
@@ -128,15 +177,22 @@ Although not recommended, edits may be made in `Database.txt` that effects chang
 
 ## 2. Features 
 
+This section provides a comprehensive list of all the features and commands in ModMan. This includes the function of each command, its format, and example of usage.
+
 | :information_source: | Inputs in `UPPER_CASE` are parameters to be supplied by the user. |
 |----------------------|-------------------------------------|
 
 
 ### 2.1 Module
 
+<<<<<<< HEAD
+=======
+ModMan allows you to keep track of the modules you are teaching. The commands below allow you to easily add, remove and select a module to work in!
+
+>>>>>>> 64e43588ad2527a9a9711bf23ddaeb07a9b5844b
 <hr style="border:1px solid darkorange; background-color: darkorange"> </hr>
 
-### 2.1.1 Adding a Module: `add module`
+### 2.1.1 Adding a Module - `add module` <a name="addmodule"></a>
 
 Adds a new module to the list of modules. If you are a TA for multiple modules, you can keep track of all of them!
 
@@ -160,9 +216,9 @@ Expected output:
 
 <hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
-### 2.1.2 Removing a Module: `remove module`
+### 2.1.2 Removing a Module - `remove module`
 
-Removes a module from the list of modules.
+Removes a module from the list of modules so that you can clear your database when the semester ends!
 
 Format: `remove module MODULE_NAME`
 
@@ -183,9 +239,13 @@ Expected output:
 
 <hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
+<<<<<<< HEAD
 ### 2.1.3 Selecting a Module: `select`
+=======
+### 2.1.3 Selecting a Module - `select`
+>>>>>>> 64e43588ad2527a9a9711bf23ddaeb07a9b5844b
 
-Select the module you want to currently work in.
+Select the module you want to currently work in. Subsequent commands will edit the details of this selected module.
 
 Format: `select MODULE_NAME`
 
@@ -207,9 +267,14 @@ Expected output:
 
 <hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
+<<<<<<< HEAD
 ### 2.1.4 Viewing Current Module: `current`
+=======
+### 2.1.4 Viewing Current Module - `current`
+>>>>>>> 64e43588ad2527a9a9711bf23ddaeb07a9b5844b
 
 View the current module you are working in. Also obtain an overview of the module, namely the lessons, assignments, as well as number of students.
+With this command, you can easily identify which module you are working in!
 
 Format: `current`
 
@@ -230,7 +295,11 @@ Expected output:
 
 <hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
+<<<<<<< HEAD
 ### 2.1.5 Listing Modules: `list module`
+=======
+### 2.1.5 Listing Modules - `list module`
+>>>>>>> 64e43588ad2527a9a9711bf23ddaeb07a9b5844b
 
 Lists all the modules you have added, and specifies the current module (if any).
 
@@ -249,9 +318,15 @@ Expected output:
 
 ### 2.2 Student 
 
+<<<<<<< HEAD
+<hr style="border:1px solid darkorange; background-color: darkorange"> </hr>
+=======
+As a TA, you would be tasked with assisting and guiding multiple students. ModMan allows you to track their details so that you could easily identify and contact them if needed!
+>>>>>>> 64e43588ad2527a9a9711bf23ddaeb07a9b5844b
+
 <hr style="border:1px solid darkorange; background-color: darkorange"> </hr>
 
-### 2.2.1 Adding a student: `add student`
+### 2.2.1 Adding a student - `add student`
 
 Assigns a new student to the current module you have selected.
 
@@ -271,10 +346,15 @@ Expected output:
     Bryan Wong, A0123456Y, e0123456@u.nus.edu
 ---------------------------------------------------------------------
 ```
+<<<<<<< HEAD
+
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
+=======
+>>>>>>> 64e43588ad2527a9a9711bf23ddaeb07a9b5844b
 
 <hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
-### 2.2.2 Listing Students Details: `list student details`
+### 2.2.2 Listing Students Details - `list student details`
 
 Lists the details of all students assigned to the current module you have selected.
 
@@ -288,10 +368,15 @@ Expected output:
     1. Bryan Wong, A0123456Y, e0123456@u.nus.edu
 -------------------------------------------------------------------------- 
 ````
+<<<<<<< HEAD
+
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
+=======
+>>>>>>> 64e43588ad2527a9a9711bf23ddaeb07a9b5844b
 
 <hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
-### 2.2.3 Listing Students in Module: `list student`
+### 2.2.3 Listing Students in Module - `list student`
 
 Lists the names of students assigned to the current module you have selected. 
 This is slightly different from the `list student details` command, allowing you to view just the names of the students assigned to a module.
@@ -310,9 +395,14 @@ Expected output:
 
 ### 2.3 Timetable
 
+<<<<<<< HEAD
+=======
+For each module, there would be lesson timings. ModMan helps you to store and manage your timetable so that you would never miss your class!
+
+>>>>>>> 64e43588ad2527a9a9711bf23ddaeb07a9b5844b
 <hr style="border:1px solid darkorange; background-color: darkorange"> </hr>
 
-### 2.3.1 Adding a Lesson: `add timetable`
+### 2.3.1 Adding a Lesson - `add timetable`
 
 Adds a new lesson to the list (timetable) of lessons for the current module you have selected. You will be able
 to specify the type of lesson, venue, day and timing.
@@ -346,7 +436,11 @@ you have to be careful in specifying the `Day` and 24-hr timing format.
 
 <hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
+<<<<<<< HEAD
 ### 2.3.2 Removing Timetable Lessons: `delete timetable`
+=======
+### 2.3.2 Removing Timetable Lessons - `delete timetable`
+>>>>>>> 64e43588ad2527a9a9711bf23ddaeb07a9b5844b
 
 Deletes the lesson in the timetable corresponding to the index, for the current module you have selected.
 
@@ -365,7 +459,11 @@ Expected output:
 
 <hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
+<<<<<<< HEAD
 ### 2.3.3 Editing Timetable Lessons: `edit timetable`
+=======
+### 2.3.3 Editing Timetable Lessons - `edit timetable`
+>>>>>>> 64e43588ad2527a9a9711bf23ddaeb07a9b5844b
 
 Edits the lesson in the timetable corresponding to the index, for the current module you have selected.
 
@@ -396,10 +494,15 @@ Expected output:
 
 In the example we have used till now, we had added a CS2113T Lecture that will occur on Friday from 4pm to 6pm over Zoom. 
 The above command can be used to change the day from `FRIDAY` to `MONDAY`.
+<<<<<<< HEAD
+
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
+=======
+>>>>>>> 64e43588ad2527a9a9711bf23ddaeb07a9b5844b
 
 <hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
-### 2.3.4 Listing Timetable Lessons: `list timetable`
+### 2.3.4 Listing Timetable Lessons - `list timetable`
 
 Lists the lessons in the timetable for the current module you have selected. The index of each lesson is its numerical order in the list. 
 
@@ -419,9 +522,16 @@ Expected output:
 
 ### 2.4 Assignment
 
+<<<<<<< HEAD
+=======
+As a TA, you may be in charge with grading and keeping track of assignments in the module.
+ModMan not only lets you manage these assignments, but also lets you autograde them automatically!
+
+
+>>>>>>> 64e43588ad2527a9a9711bf23ddaeb07a9b5844b
 <hr style="border:1px solid darkorange; background-color: darkorange"> </hr>
 
-### 2.4.1 Adding an Assignment: `add assignment`
+### 2.4.1 Adding an Assignment - `add assignment`
 
 Adds an assignment to the current module you have selected.
 
@@ -441,10 +551,15 @@ Expected output:
     Magic Sequence
 ---------------------------------------------------------------------
 ```
+<<<<<<< HEAD
+
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
+=======
+>>>>>>> 64e43588ad2527a9a9711bf23ddaeb07a9b5844b
 
 <hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
-### 2.4.2 Setting Assignment Deadline : `set assignment deadline`
+### 2.4.2 Setting Assignment Deadline - `set assignment deadline`
 
 The `set assigment deadline` command allows you to set the date to grade the assignment by.
 If a deadline had been set previously, the deadline of the assignment will be updated.
@@ -478,10 +593,15 @@ Examples of usage:</br>
 
 | :bulb: | You can set your own deadlines to be earlier than the actual deadline for grading to help plan your time more wisely!|
 |----------------------|-------------------------------------|
+<<<<<<< HEAD
+
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
+=======
+>>>>>>> 64e43588ad2527a9a9711bf23ddaeb07a9b5844b
 
 <hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
-### 2.4.3 Setting Assignment Grade : `set assignment grade`
+### 2.4.3 Setting Assignment Grade - `set assignment grade`
 
 The `set assigment grade` command allows you to set the grade of a student after you have graded their assignment.
 If a grade had been set previously, the grade for the student will be updated.
@@ -514,7 +634,11 @@ Examples of usage:</br>
 
 <hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
+<<<<<<< HEAD
 ### 2.4.4 Setting Assignment Percentage: `set assignment percentage` 
+=======
+### 2.4.4 Setting Assignment Percentage - `set assignment percentage` 
+>>>>>>> 64e43588ad2527a9a9711bf23ddaeb07a9b5844b
 
 Sets the assignment weightage of an existing assignment. The percentage can be entered as either a 2-decimal number, 1-decimal number or an integer. 
 
@@ -534,11 +658,19 @@ Expected output:
 
 <hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
+<<<<<<< HEAD
 ### 2.4.5 Setting Assignment Comments: `set assignment comments` 
  
 Sets a comment for an existing assignment. The assignment comment cannot exceed 100 characters. ModMan will eventually support comments of unlimited length (we are still working on this feature!). 
  
 | :bulb: |The editing an assignment's comment feature is still in production. However, you can recreate an edit by calling the [`get assignment comments`](#246-getting-assignment-comments-get-assignment-comments) command, copy-pasting the result onto your terminal and editing before setting assignment comments again| 
+=======
+### 2.4.5 Setting Assignment Comments - `set assignment comments` 
+ 
+Sets a comment for an existing assignment. The assignment comment cannot exceed 100 characters. ModMan will eventually support comments of unlimited length (we are still working on this feature!). 
+ 
+| :bulb: |The editing an assignment's comment feature is still in production. However, you can recreate an edit by calling the [`get assignment comments`](#getting-assignment-comments-get-assignment-comments) command, copy-pasting the result onto your terminal and editing before setting assignment comments again| 
+>>>>>>> 64e43588ad2527a9a9711bf23ddaeb07a9b5844b
 |----------------------|-------------------------------------| 
  
 Format: `set assignment comments /a ASSIGNMENT_NAME /c COMMENTS` 
@@ -558,7 +690,7 @@ Expected output:
 
 <hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
-### 2.4.6 Getting Assignment Comments: `get assignment comments`
+### 2.4.6 Getting Assignment Comments - `get assignment comments`
 
 Retrieves the assignment comments of an existing assignment and prints it out for the user.
 
@@ -579,7 +711,7 @@ Expected output:
 
 <hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
-### 2.4.7 Editing an Assignment Name: `edit assignment name`
+### 2.4.7 Editing an Assignment Name - `edit assignment name`
 
 Edits the assignment name of an existing assignment
 
@@ -600,7 +732,7 @@ Expected output:
 
 <hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
-### 2.4.8 Listing Module Assignments : `list assignments` 
+### 2.4.8 Listing Module Assignments - `list assignments` 
 
 The `list assignments` command lists out all the assignments in the current module you are working in. It also shows you information on the type of assignment 
 and the due date for grading, if you have set a deadline for the assignment.
@@ -629,7 +761,11 @@ Expected output:
 
 <hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
+<<<<<<< HEAD
 ### 2.4.9 Sorting Module Assignments : `sort assignments by deadline` 
+=======
+### 2.4.9 Sorting Module Assignments - `sort assignments by deadline` 
+>>>>>>> 64e43588ad2527a9a9711bf23ddaeb07a9b5844b
 
 The `sort assignment by deadline` command sorts and lists the assignments in your current module by deadline, allowing you to easily keep track of which assignments have to be graded soon. 
 The assignments are sorted based on the urgency of the grading from the most urgent to the least urgent. </br>
@@ -664,10 +800,15 @@ After sorting:
     3. quiz1 (McqAssignment) - due date not specified.
 ---------------------------------------------------------------------
 ```
+<<<<<<< HEAD
+
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
+=======
+>>>>>>> 64e43588ad2527a9a9711bf23ddaeb07a9b5844b
 
 <hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
-### 2.4.10 Listing Assignment Grades : `list assignment grades` 
+### 2.4.10 Listing Assignment Grades - `list assignment grades` 
 
 Lists the students' grades for a particular assignment.
 
@@ -688,7 +829,11 @@ Expected output:
 
 <hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
+<<<<<<< HEAD
 ### 2.4.11 Viewing Assignment Answer : `view assignment answer`
+=======
+### 2.4.11 Viewing Assignment Answer - `view assignment answer`
+>>>>>>> 64e43588ad2527a9a9711bf23ddaeb07a9b5844b
 
 The `view assignment answer` command allows you to easily search and retrieve the answer key for an assignment just by entering the name of the assignment. </br>
 
@@ -746,10 +891,15 @@ Expected output:
 ```
 | :bulb: | You can open up the student script in another terminal so that you can view both the answer key and student script side by side! |
 |----------------------|-------------------------------------|
+<<<<<<< HEAD
+
+<hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
+=======
+>>>>>>> 64e43588ad2527a9a9711bf23ddaeb07a9b5844b
 
 <hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
-### 2.4.12 Viewing Student Script : `view student script`
+### 2.4.12 Viewing Student Script - `view student script`
 
 The `view student script` command allows you to easily search and retrieve the student's script for an assignment just by entering the name of the assignment and the student.</br> 
 
@@ -806,7 +956,7 @@ Expected output:
 
 <hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
-### 2.4.13 Autograding Assignments : `autograde assignment`
+### 2.4.13 Autograding Assignments - `autograde assignment`
 
 ModMan has an integrated autograder to help you grade digital assignment submissions easily and efficiently!</br> 
 
@@ -863,7 +1013,7 @@ Expected output:
 
 <hr style="border:1px solid darkorange; background-color: darkorange"> </hr>
 
-### 2.5.1 Listing Basic Commands: `help`
+### 2.5.1 Listing Basic Commands - `help`
 
 This command is available for you to get a quick reference of all the basic commands available in ModMan, and their usages.
 You can invoke `help` any time you are unsure of the basic commands and their formats.
@@ -896,7 +1046,7 @@ You may open this User Guide for a comprehensive list.
 
 <hr style="border:0.5px solid darkorange; background-color: darkorange"> </hr>
 
-### 2.5.2 Exiting ModMan : `bye`
+### 2.5.2 Exiting ModMan - `bye`
 
 Auto-saves all your changes and exits the program. ModMan will have all your data ready the next time you load it.
 
@@ -979,7 +1129,7 @@ list assignments | `list assignments` <br>
 sort assignments by deadline | `sort assignments by deadline` <br>
 list assignment grades | `list assignment grades /a ASSIGNMENT_NAME` <br> e.g. `list assignment grades /a quiz1`
 view assignment answer | `view assignment answer /a ASSIGNMENT_NAME` <br> e.g. `view assignment answer /a quiz1`
-view student script | `view student script /a ASSIGNMENT_NAME /s STUDENT_NAME` <br> e.g. `view assignment answer /a quiz1 /s Jianning`
+view student script | `view student script /a ASSIGNMENT_NAME /s STUDENT_NAME` <br> e.g. `view student script /a quiz1 /s Jianning`
 autograde assignment | `autograde assignment /a ASSIGNMENT_NAME` <br> e.g. `autograde assignment /a quiz1`
 
 <br>

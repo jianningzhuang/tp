@@ -44,9 +44,9 @@ information.
     * [Storage](#storage-component)
     * [Data](#data-component)
 * [Implementation](#implementation)
-    * [Editing Assignment Information](#editing-assignment-information-jianning-and-bryan)
-    * [Sorting Assignments by Deadline](#sorting-assignments-by-deadline-jianning)
-    * [Autograding Assignments](#autograding-assignments-jianning)
+    * [Editing Assignment Information](#editing-assignment-information)
+    * [Sorting Assignments by Deadline](#sorting-assignments)
+    * [Autograding Assignments](#autograding-assignments)
     * [(Coming soon) Get statistics from Autograde](#coming-soon-get-statistics-from-autograde)
     * [Adding Lesson to Module Timetable](#adding-lesson-to-module-timetable)
 * [Product scope](#product-scope)
@@ -410,7 +410,7 @@ the various commands, and their input format.
 ### Initial launch
 
 1. Ensure you have Java 11 installed on your computer or install it from [here](https://www.oracle.com/sg/java/technologies/javase-jdk11-downloads.html).
-1. Download the latest `ModMan.jar` release from [here](https://github.com/AY2021S2-CS2113T-F08-1/tp/releases/tag/v2.0).
+1. Download the latest `ModMan.jar` release from [here](https://github.com/AY2021S2-CS2113T-F08-1/tp/releases/tag/v2.1).
 1. Open a command window in the folder containing the `.jar` file.
 1. Run the command `java -jar {filename}.jar` <br> If you haven't changed the filename, run the command `java -jar ModMan.jar`
 
