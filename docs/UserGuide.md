@@ -916,23 +916,32 @@ Expected output:
 **Q**: How do I transfer my data onto another computer?
 
 **A**: Navigate to where the ModMan jar file is located and identify the Database folder. 
-Simply copy this Database folder and transfer it via thumb drive, email or any other means to your other computer. 
-After running ModMan on your other computer, you can replace the generated Database folder with the one on your previous computer. 
+Copy this Database folder along with the ModMan jar file over to your other computer and place them in an empty folder.
 You're now good to go to start accessing your data on your new computer!
-
-**Q**: How do I delete a particular student/assignment? 
-
-**A**: The feature of deletion is still in progress and will be released in our upcoming versions. 
 
 **Q**: When is the data saved to the database?
 
-**A**: It is only saved when you exit the program using the `bye` command.
+**A**: Your data is only saved when you exit the program using the `bye` command. So always remember to say goodbye to ModMan!
+
+**Q**: How do I delete a particular student/assignment? 
+
+**A**: The delete feature for students and assignments are currently still work in progress but will be released in our upcoming version soon.
+
+**Q**: How are the three assignment types different?
+
+**A**: ModMan currently allows you to add three types of assignments - MCQ, Short Answer and Long Answer. 
+MCQ assignments only allow for options `A to E` or `1 to 5` as answers while Short Answer and Long Answer assignments only have a 100 character limit for answers.
+MCQ and Short Answer assignments are autogradable as they have fixed answers and grading schemes while Long Answer assignments are open-ended and allow for flexible grading.
 
 **Q**: How do I add the answer key and students' scripts for grading?
 
-**A**: You can simply copy and paste the answer key and student scripts into the respective folders in the working directory of ModMan named `answers` and `scripts` respectively.
-Please also check that you have named the files in the correct format. 
-Refer to section 2.4.11 and 2.4.12 for more details on the format of the answer key and student script text files.
+**A**: You can simply copy and paste the answer key and student scripts into the respective folders in the working directory of ModMan named `answers` and `scripts`.
+You can refer to sections `2.4.11` and `2.4.12` for more details on the format of the answer key and student script text files.
+
+**Q**: How do I report a bug or give feedback for the application?
+
+**A**: You are welcome to raise a new issue [*here*](https://github.com/AY2021S2-CS2113T-F08-1/tp/issues) on our project repository.
+Do include as much detail as you can on the bug along with any screenshots on how you came across the problem. We also look forward to hearing from you if you have any suggestions to improve our app!
 
 <hr style="border:2px solid orange; background-color: orange"> </hr>
 
